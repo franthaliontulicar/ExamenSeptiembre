@@ -12,5 +12,5 @@ comment3.target=int\ getNumeroProductos()
 comment4.params=apli
 comment4.target=void\ addProducto(Producto)
 comment5.params=usuario\ producto
-comment5.target=void\ comprar(Usuario,\ Aplicacion)
+comment5.target=void\ comprar(java.lang.String,\ java.lang.String)
 numComments=6

@@ -10,16 +10,16 @@ public class GooglePlay
     // instance variables - replace the example below with your own
     private ArrayList<Usuario> usuarios;
     private ArrayList<Producto> productos;
-  
+
     /**
      * Constructor for objects of class GooglePlay
      */
-   
+
     public GooglePlay()
     {
         // initialise instance variables
-       usuarios = new ArrayList<>();
-       productos = new ArrayList<>();
+        usuarios = new ArrayList<>();
+        productos = new ArrayList<>();
     }
 
     /**
@@ -33,23 +33,32 @@ public class GooglePlay
         // put your code here
         return usuarios.size();
     }
-    
+
     public void addUsuario(Usuario usuario){
         usuarios.add(usuario);
     }
+
     public int getNumeroProductos(){
         return productos.size();
     }
-    
+
     public void addProducto(Producto apli){
         productos.add(apli);
     }
-    
-    public void comprar(Usuario usuario, Aplicacion producto){
-        
-        String correo = usuario.getNombreCuenta();
-        String compra = producto.getNombre();
-        System.out.println("Usuario: " + correo + "/ln Compra: " + compra);
-        
+
+    public void comprar(String usuario, String producto){
+        int index = 0;
+        int indexP = 0;
+        while(index <= usuarios.size() && indexP <= productos.size()){
+            if(usuarios != null && producto != null){
+                usuarios.add(usuarios.get(index));
+                productos.add(productos.get(indexP));
+            }
+            index++;
+            indexP++;
+        }
+
+        System.out.println("Usuario: " +usuario + "/ln Compra: " + producto);
+
     }
 }
