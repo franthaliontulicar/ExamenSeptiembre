@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Libros extends ProductoMultimedia
+public class Libro extends ProductoMultimedia
 {
     // instance variables - replace the example below with your own
     private int numPaginas;
@@ -13,7 +13,7 @@ public class Libros extends ProductoMultimedia
     /**
      * Constructor for objects of class Libros
      */
-    public Libros(String titulo, int ac, int numP, boolean fic)
+    public Libro(String titulo, int ac, int numP, boolean fic)
     {
         // initialise instance variables
         super(titulo,ac);

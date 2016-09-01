@@ -5,16 +5,16 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Peliculas extends ProductoMultimedia
+public class Pelicula extends ProductoMultimedia
 {
     // instance variables - replace the example below with your own
     private int duracion;
-    private boolean calidadRepro;
+    private int calidadRepro;
 
     /**
      * Constructor for objects of class Peliculas
      */
-    public Peliculas(String titulo, int ac, int dura, boolean repro)
+    public Pelicula(String titulo, int ac, int dura, int repro)
     {
         // initialise instance variables
         super(titulo,ac);
@@ -45,14 +45,14 @@ public class Peliculas extends ProductoMultimedia
         return duracion;
     }
     
-    public boolean getCalidad(){
-        boolean hD = false;
-        if(calidadRepro == true){
-            hD = true;
+    public String getCalidad(){
+        String calidad = "HD";
+        if(calidadRepro == 1080){
+           calidad = "full HD";
         }
         else{
-            hD = false;
+            calidad = "HD";
         }
-        return hD;
+        return calidad;
     }
 }

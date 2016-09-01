@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Write a description of class GooglePlay here.
  * 
@@ -8,15 +8,18 @@
 public class GooglePlay
 {
     // instance variables - replace the example below with your own
-    private int x;
-
+    private ArrayList<Usuario> usuarios;
+    private ArrayList<Producto> productos;
+  
     /**
      * Constructor for objects of class GooglePlay
      */
+   
     public GooglePlay()
     {
         // initialise instance variables
-        x = 0;
+       usuarios = new ArrayList<>();
+       productos = new ArrayList<>();
     }
 
     /**
@@ -25,9 +28,28 @@ public class GooglePlay
      * @param  y   a sample parameter for a method
      * @return     the sum of x and y 
      */
-    public int sampleMethod(int y)
+    public int getNumeroUsuarios()
     {
         // put your code here
-        return x + y;
+        return usuarios.size();
+    }
+    
+    public void addUsuario(Usuario usuario){
+        usuarios.add(usuario);
+    }
+    public int getNumeroProductos(){
+        return productos.size();
+    }
+    
+    public void addProducto(Producto apli){
+        productos.add(apli);
+    }
+    
+    public void comprar(Usuario usuario, Aplicacion producto){
+        
+        String correo = usuario.getNombreCuenta();
+        String compra = producto.getNombre();
+        System.out.println("Usuario: " + correo + "/ln Compra: " + compra);
+        
     }
 }

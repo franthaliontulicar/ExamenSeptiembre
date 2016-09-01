@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Write a description of class Usuario here.
  * 
@@ -8,15 +8,16 @@
 public class Usuario
 {
     // instance variables - replace the example below with your own
-    private int x;
-
+    private String correo;
+    
     /**
      * Constructor for objects of class Usuario
      */
-    public Usuario()
+    public Usuario(String email)
     {
         // initialise instance variables
-        x = 0;
+       correo = email;
+     
     }
 
     /**
@@ -25,9 +26,8 @@ public class Usuario
      * @param  y   a sample parameter for a method
      * @return     the sum of x and y 
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public String getNombreCuenta(){
+        return correo;
     }
+    
 }

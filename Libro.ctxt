@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.params=titulo\ ac\ numP\ fic
-comment0.target=Libros(java.lang.String,\ int,\ int,\ boolean)
+comment0.target=Libro(java.lang.String,\ int,\ int,\ boolean)
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Libros\r\n
 comment1.params=
 comment1.target=int\ getNumeroPaginas()

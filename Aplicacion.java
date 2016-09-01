@@ -9,17 +9,18 @@ public class Aplicacion extends Producto
 {
     // instance variables - replace the example below with your own
     private String nombre;
-    private float espacioOcupado;
-    public Categoria categoria;
+    private double espacioOcupado;
+    private Categoria categoria;
 
     /**
      * Constructor for objects of class Aplicacion
      */
-    public Aplicacion(String nom, float espacio)
+    public Aplicacion(String nom, double espacio, Categoria cate)
     {
         // initialise instance variables
         nombre = nom;
         espacioOcupado = espacio;
+        categoria = cate;
     }
 
     /**
@@ -28,14 +29,14 @@ public class Aplicacion extends Producto
      * @param  y   a sample parameter for a method
      * @return     the sum of x and y 
      */
-    public String getNombe()
+    public String getNombre()
     {
         // put your code here
         return nombre;
     }
     
-    public float getTamañoEnMB(){
-        return espacioOcupado;
+    public double getTamanoEnMB(){
+           return espacioOcupado;
     }
     public Categoria getCategoria(){
         return categoria;
